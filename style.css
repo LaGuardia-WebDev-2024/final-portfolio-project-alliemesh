@@ -12,7 +12,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333333;
+  background-color: #3a2222;
   position: fixed;
   top: 0;
   width: 100%;
@@ -40,16 +40,23 @@ li a:hover:not(.active) {
 }
 
 h1 {
-  width: 100%;overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid white; /* The typwriter cursor */
+  
+    width: 800px;
+  font-family: "Crimson Text", serif !important;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid rgb(255, 255, 255); /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
   animation: 
     typing 3.5s steps(30, end),
     blink-caret .5s step-end infinite;
-  font-size: 50px;
+  font-size: 40px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
 }
+
 
 @keyframes typing {
   from { width: 0 }
@@ -61,7 +68,3 @@ h1 {
   from, to { border-color: transparent }
   50% { border-color: white }
 }
-
-
-
-
