@@ -1,6 +1,28 @@
 /* Styling Only Related To ALL Pages */
 
-body {
+
+@import url('https://fonts.googleapis.com/css2?family=Almendra+SC&family=Fondamento:ital@0;1&family=Limelight&family=Macondo+Swash+Caps&display=swap');
+
+h1{
+      font-family: "Almendra SC", serif;
+  font-weight: 400;
+  font-style: bold;
+}
+
+  p{  font-family: "Macondo Swash Caps", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+li{  font-family: "Fondamento", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(86, 223, 178);}
+
+
+
+body{
+background-color: rgb(213, 231, 181);
   padding-top: 30px;
   margin-left: 0px;
 }
@@ -12,7 +34,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #3a2222;
+  background-color:  rgb(110, 26, 55);
   position: fixed;
   top: 0;
   width: 100%;
@@ -25,24 +47,26 @@ li {
 
 li a {
   display: block;
-  color: white;
+  color: rgb(213, 231, 181);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 li a:hover:not(.active) {
-  background-color: orange;
+  background-color: rgb(174, 36, 72);
+  color:bisque;
 }
 
 .active {
-  background-color: red;
+  background-color: rgb(114, 186, 169);
+  color: rgb(110, 26, 55);
 }
+
 
 h1 {
   
     width: 800px;
-  font-family: "Crimson Text", serif !important;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid rgb(255, 255, 255); /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
@@ -58,6 +82,7 @@ h1 {
 }
 
 
+
 @keyframes typing {
   from { width: 0 }
   to { width: 800px}
@@ -66,5 +91,5 @@ h1 {
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: white }
+  50% { border-color: rgb(213, 231, 181) }
 }
